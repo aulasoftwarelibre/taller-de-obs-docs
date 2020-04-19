@@ -1,0 +1,55 @@
+site_name: "Taller de OBS"
+site_author: "Francisco Javier Molina Prieto <i72moprf@uco.es>"
+site_description: "Taller de grabación y transmisión de vídeo con OBS"
+site_url: "https://github.com/aulasoftwarelibre/taller-de-obs-docs.git"
+
+repo_name: "aulasoftwarelibre/taller-de-obs-docs"
+repo_url: "https://github.com/aulasoftwarelibre/taller-de-obs-docs.git"
+
+theme:
+  favicon: "images/logoasl.png"
+  features:
+    - instant
+  icon:
+    logo: material/youtube-tv
+  language: "es"
+  name: "material"
+  palette:
+    primary: grey
+    accent: grey
+
+plugins:
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+  - search
+
+extra_css: [extra.css, dark.css]
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/aulasoftwarelibre"
+    - icon: fontawesome/brands/twitter
+      link: "https://twitter.com/aulasl"
+    - icon: fontawesome/brands/facebook
+      link: "https://facebook.com/aulasl"
+    - icon: fontawesome/brands/instagram
+      link: "https://instagram.com/aulasoftwarelibre"
+    - icon: fontawesome/brands/youtube
+      link: "https://www.youtube.com/channel/UCfWiR5j-cbKcGTi9faK8P6w"
+
+markdown_extensions:
+  - admonition: ~
+  - attr_list: ~
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list: ~
+  - footnotes: ~
+  - toc:
+      permalink: true
+  - pymdownx.keys: ~
+
+google_analytics:
+  - "UA-51754922-1"
+  - "auto"
