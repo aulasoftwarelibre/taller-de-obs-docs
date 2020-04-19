@@ -21,7 +21,7 @@ En la vista previa, podemos seleccionar y modificar a placer cualquiera de las f
 
 Puedes utilizar los puntos de referencia para cambiar el tamaño de la fuente, por defecto se mantendrá la relación de aspecto.
 
-En caso de querer transformar la fuente sin importar la relación de aspecto, mantén la tecla SHIFT mientras cambias sus dimensiones. También puedes recortar parte de la fuente manteniendo la tecla ALT.
+En caso de querer transformar la fuente sin importar la relación de aspecto, mantén la tecla ++shift++ mientras cambias sus dimensiones. También puedes recortar parte de la fuente manteniendo la tecla ++alt++.
 
 ¡Ojo! Ten en cuenta que si cambias la resolución de la base (lienzo) en los ajustes de vídeo más adelante, tendrás que volver a alinear todas las fuentes. En caso de cambiar la resolución de salida (escalada), no habría problema.
 
