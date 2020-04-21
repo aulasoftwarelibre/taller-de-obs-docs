@@ -15,7 +15,7 @@ Universidad de Córdoba](https://www.uco.es/aulasoftwarelibre).
 
 ## Documentación
 
-El curso se puede seguir en [https://auladesoftwarelibre.github.io/taller-de-obs-docs/](https://auladesoftwarelibre.github.io/taller-de-obs-docs/)
+El curso se puede seguir en [https://aulasoftwarelibre.github.io/taller-de-obs-docs/](https://aulasoftwarelibre.github.io/taller-de-obs-docs/)
 
 ## Vídeo
 
@@ -23,8 +23,7 @@ Además de este tutorial online tienes el siguiente video donde se amplia el con
 
 <p align="center">
     
-[![Mira el video](https://img.youtube.com/vi/w-APHWikfXk/maxresdefault.jpg)
-](https://youtu.be/w-APHWikfXk)
+[![Mira el video](/docs/images/video.png)](https://youtu.be/w-APHWikfXk)
 
 </p>
 
