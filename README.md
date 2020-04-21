@@ -22,7 +22,10 @@ El curso se puede seguir en [https://auladesoftwarelibre.github.io/taller-de-obs
 Además de este tutorial online tienes el siguiente video donde se amplia el contenido:
 
 <p align="center">
-<iframe  width="560" height="315" src="https://www.youtube.com/embed/w-APHWikfXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+[![Mira el video](https://img.youtube.com/vi/w-APHWikfXk/maxresdefault.jpg)
+](https://youtu.be/w-APHWikfXk)
+
 </p>
 
 ## Agradecimientos
