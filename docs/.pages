@@ -6,5 +6,8 @@ arrange:
   - filters.md
   - studio-mode.md
   - transitions.md
+  - advanced-concepts.md
+  - advanced-configuration.md
+  - advanced-transitions-configuration.md
   - recommendations.md
   - references.md
