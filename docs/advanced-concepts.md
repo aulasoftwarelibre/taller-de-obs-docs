@@ -1,6 +1,6 @@
 # Conceptos avanzados
 
-## Bitrate de vídeo
+## Bitrate de vídeo y cuadros por segundo (FPS)
 
 Normalmente, los factores que van a determinar la calidad final de un vídeo son la resolución de este, el formato y el bitrate. La mayoría de veces nos conformamos con ver que la resolución del vídeo es 1080p o 4K, con que el vídeo esté en formato AVI que es el que más calidad tiene (aunque aumenta el tamaño de los ficheros considerablemente), y nos olvidamos de uno de los valores más importantes que afectan a la calidad general de la salida de nuestro contenido.
 
@@ -45,6 +45,25 @@ Sin embargo, con el crecimiento de las plataformas de streaming en la última d�
 
 
 > ¡Ojo! Como ya hemos visto, el bitrate no es más que el flujo de datos transmitidos en tu grabación, por lo que si se trata de una transmisión por algún servicio de streaming como Twitch, aumentar el bitrate debe ir en función de tu velocidad de conexión (de subida).
+
+Seguro que alguna vez viste 60fps en el selector de calidad de YouTube, lo pulsaste y todo te pareció mucho más fluido. Esto significa que se transmiten 60 imágenes por segundo, en lugar del valor por defecto, que suele ser 30 fps en la mayoría de casos. En el cine, las películas suelen estar grabadas a 24fps, ya que ayuda a mejorar la calidad general de la grabación, al entrar más luz en el obturador de la cámara. Hay que tener en cuenta el contenido que grabaremos para elegir un framerate o tasa de cuadros por segundo adecuada. No es lo mismo estar grabando un videojuego competitivo, que por lo general se moverá en torno a los 60fps o más, que grabar una pizarra.
+
+## Bitrate de audio y tasa de muestreo
+
+Obviamente, no podíamos olvidarnos del audio en los conceptos avanzados. ¡Por favor, configurad bien el audio de vuestro streaming! De nada sirve haber configurado los filtros de audio y tener un buen micrófono si olvidas comprobar el bitrate de audio o la tasa de muestreo.
+
+El bitrate de audio es esencialmente igual que el bitrate de vídeo, pero con la información de audio de nuestra grabación. El bitrate recomendado para la mayoría de grabaciones es el que indicamos en la siguiente tabla:
+
+| Bitrate de audio (kbps) | Calidad resultante                                         |
+|-------------------------|------------------------------------------------------------|
+| 320 kbps                | Calidad de un CD                                           |
+| 192 kbps                | No hay pérdidas significativas                             |
+| 128 kbps                | Pérdidas algo perceptibles                                 |
+| 96 kbps                 | Calidad similar a la de la radio FM                        |
+| 32 kbps                 | Calidad similar a la de la radio AM                        |
+| 16 kbps                 | Calidad similar a la radio de ondas cortas (walkie-talkie) |
+
+La tasa de muestreo es la cantidad de veces que se registra un sonido analógico por segundo para ser reconstruido digitalmente. Es el equivalente a la cantidad de frames por segundo (cuadros por segundo) en un vídeo.
 
 ## Codificación
 
