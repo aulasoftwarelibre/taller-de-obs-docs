@@ -12,14 +12,14 @@
         <meta name="author" content="Francisco Javier Molina Prieto <i72moprf@uco.es>">
       
       
-        <link rel="canonical" href="https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/transitions/">
+        <link rel="canonical" href="https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/advanced-concepts/">
       
       <link rel="icon" href="../images/logoasl.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
     
     
       
-        <title>Transiciones - Taller de OBS</title>
+        <title>Conceptos avanzados - Taller de OBS</title>
       
     
     
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#transiciones" class="md-skip">
+        <a href="#conceptos-avanzados" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Transiciones
+              Conceptos avanzados
             
           </span>
         </div>
@@ -304,21 +304,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../transitions/" class="md-nav__link">
         Transiciones
       </a>
-      
     </li>
   
 
@@ -359,11 +349,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../advanced-concepts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Conceptos avanzados
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Conceptos avanzados
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bitrate-de-video" class="md-nav__link">
+    Bitrate de vídeo
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -388,6 +419,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bitrate-de-video" class="md-nav__link">
+    Bitrate de vídeo
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -398,16 +444,107 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/edit/master/docs/transitions.md" title="Editar esta página" class="md-content__button md-icon">
+  <a href="https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/edit/master/docs/advanced-concepts.md" title="Editar esta página" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="transiciones">Transiciones<a class="headerlink" href="#transiciones" title="Permanent link">&para;</a></h1>
-<p>Como ya vimos anteriormente, en la interfaz de OBS existe un panel dedicado a Transiciones de Escena, en la parte inferior derecha, junto al panel de Controles.</p>
-<p>Las transiciones disponibles por defecto son Corte y Desvanecimiento, aunque pueden agregarse más utilizando el botón de más. Explora las distintas transiciones disponibles y ajústalas a tu gusto.</p>
-<p>Las transiciones que añadas mediante el panel de transiciones, podrás elegirlas en el panel de Transiciones rápidas del Modo Estudio.</p>
+<h1 id="conceptos-avanzados">Conceptos avanzados<a class="headerlink" href="#conceptos-avanzados" title="Permanent link">&para;</a></h1>
+<h2 id="bitrate-de-video">Bitrate de vídeo<a class="headerlink" href="#bitrate-de-video" title="Permanent link">&para;</a></h2>
+<p>Normalmente, los factores que van a determinar la calidad final de un vídeo son la resolución de este, el formato y el bitrate. La mayoría de veces nos conformamos con ver que la resolución del vídeo es 1080p o 4K, con que el vídeo esté en formato AVI que es el que más calidad tiene (aunque aumenta el tamaño de los ficheros considerablemente), y nos olvidamos de uno de los valores más importantes que afectan a la calidad general de la salida de nuestro contenido.</p>
+<p>El bitrate de un vídeo podría traducirse como la cantidad de datos que reproduce un ordenador por segundo, el flujo de transmisión de datos, como si cada uno los píxeles de información de nuestro vídeo se trataran del caudal de un río. El bitrate se mide en kilobytes por segundo (kpbs), a mayor número de kpbs, mayor será la calidad resultante del vídeo.</p>
+<p>No es solo un factor muy importante, sino que en muchos casos puede ser el más determinante de todos. Imagina por ejemplo grabar un vídeo en 4K con una bitrate de vídeo de 1000kpbs (que es bastante inadecuado para esa resolución). Esto sería similar a cambiarle la carrocería a un coche del desguace por la de un Ferrari y esperar que el coche corra como un Ferrari (spoiler: no pasa), al fin y al cabo, el motor sigue siendo el mismo que antes, y tal vez el coche ni arranque.</p>
+<p>Normalmente puede conocerse el bitrate de un vídeo viendo las Propiedades del fichero resultante.</p>
+<p><img alt="Bitrate de vídeo" src="../images/video-bitrate.png" /></p>
+<p>Los bitrates más usados suelen ser los siguientes:</p>
+<ul>
+<li>240p @ H.264: 350 Kbps (2,63 MB/minuto)</li>
+<li>360p @ H.264: 700 Kbps (5,25 MB/minuto)</li>
+<li>480p @ H.264: 1.200 Kbps (9 MB/minuto)</li>
+<li>720p @ H.264: 2.500 Kbps (18,8 MB/minuto)</li>
+<li>1080p @ H.264: 5.000 Kbps (37,5 MB/minuto)</li>
+<li>DVD: 6.000 Kbps (45 MB/minuto)</li>
+<li>Blu-ray: 20.000 Kbps (150 MB/minuto)</li>
+</ul>
+<p>Sin embargo, con el crecimiento de las plataformas de streaming en la última década, existen unos bitrates de vídeo recomendados para <a href="https://stream.twitch.tv/encoding/">Twitch</a> y para <a href="https://support.google.com/youtube/answer/2853702?hl=es#zippy=">YouTube</a>. Te dejamos esta tabla resumen con las configuraciones más típicas.</p>
+<table>
+<thead>
+<tr>
+<th>Servicio</th>
+<th>Bitrate (kbps)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitch 1080p - 60 fps</td>
+<td>Entre 4.500 y 6.000 Kbps</td>
+</tr>
+<tr>
+<td>Twitch 1080p - 30 fps</td>
+<td>Entre 3.500 y 5.000 Kbps</td>
+</tr>
+<tr>
+<td>Twitch 720p - 60 fps</td>
+<td>Entre 3.500 y 5.000 Kbps</td>
+</tr>
+<tr>
+<td>Twitch 720p - 30 fps</td>
+<td>Entre 2.500 y 4.000 Kbps</td>
+</tr>
+<tr>
+<td>Twitch 480p - 60 fps</td>
+<td>Entre 1.500 y 3.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 2160p - 60 fps</td>
+<td>Entre 20.000 y 51.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 2160p - 30 fps</td>
+<td>Entre 13.000 y 34.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 1440p - 60 fps</td>
+<td>Entre 9.000 y 18.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 1440p - 30 fps</td>
+<td>Entre 6.000 y 13.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 1080p - 60 fps</td>
+<td>Entre 4.500 y 9.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 1080p - 30 fps</td>
+<td>Entre 3.000 y 6.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 720p - 60 fps</td>
+<td>Entre 2.250 y 6.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 720p - 30 fps</td>
+<td>Entre 1.500 y 4.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 480p - 60 fps</td>
+<td>Entre 500 y 2.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 360p - 30 fps</td>
+<td>Entre 400 y 1.000 Kbps</td>
+</tr>
+<tr>
+<td>YouTube 240p - 60 fps</td>
+<td>Entre 300 y 700 Kbps</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>¡Ojo! Como ya hemos visto, el bitrate no es más que el flujo de datos transmitidos en tu grabación, por lo que si se trata de una transmisión por algún servicio de streaming como Twitch, aumentar el bitrate debe ir en función de tu velocidad de conexión (de subida).</p>
+</blockquote>
 
   <hr>
 <div class="md-source-file">
@@ -432,7 +569,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../studio-mode/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Modo Estudio" rel="prev">
+        <a href="../references/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Referencias" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -441,26 +578,11 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Modo Estudio
+              Referencias
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../recommendations/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Recomendaciones" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              Recomendaciones
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
