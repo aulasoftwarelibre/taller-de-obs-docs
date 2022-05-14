@@ -385,8 +385,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bitrate-de-video" class="md-nav__link">
-    Bitrate de vídeo
+  <a href="#bitrate-de-video-y-cuadros-por-segundo-fps" class="md-nav__link">
+    Bitrate de vídeo y cuadros por segundo (FPS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitrate-de-audio-y-tasa-de-muestreo" class="md-nav__link">
+    Bitrate de audio y tasa de muestreo
   </a>
   
 </li>
@@ -433,8 +440,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bitrate-de-video" class="md-nav__link">
-    Bitrate de vídeo
+  <a href="#bitrate-de-video-y-cuadros-por-segundo-fps" class="md-nav__link">
+    Bitrate de vídeo y cuadros por segundo (FPS)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bitrate-de-audio-y-tasa-de-muestreo" class="md-nav__link">
+    Bitrate de audio y tasa de muestreo
   </a>
   
 </li>
@@ -465,7 +479,7 @@
 
 
 <h1 id="conceptos-avanzados">Conceptos avanzados<a class="headerlink" href="#conceptos-avanzados" title="Permanent link">&para;</a></h1>
-<h2 id="bitrate-de-video">Bitrate de vídeo<a class="headerlink" href="#bitrate-de-video" title="Permanent link">&para;</a></h2>
+<h2 id="bitrate-de-video-y-cuadros-por-segundo-fps">Bitrate de vídeo y cuadros por segundo (FPS)<a class="headerlink" href="#bitrate-de-video-y-cuadros-por-segundo-fps" title="Permanent link">&para;</a></h2>
 <p>Normalmente, los factores que van a determinar la calidad final de un vídeo son la resolución de este, el formato y el bitrate. La mayoría de veces nos conformamos con ver que la resolución del vídeo es 1080p o 4K, con que el vídeo esté en formato AVI que es el que más calidad tiene (aunque aumenta el tamaño de los ficheros considerablemente), y nos olvidamos de uno de los valores más importantes que afectan a la calidad general de la salida de nuestro contenido.</p>
 <p>El bitrate de un vídeo podría traducirse como la cantidad de datos que reproduce un ordenador por segundo, el flujo de transmisión de datos, como si cada uno los píxeles de información de nuestro vídeo se trataran del caudal de un río. El bitrate se mide en kilobytes por segundo (kpbs), a mayor número de kpbs, mayor será la calidad resultante del vídeo.</p>
 <p>No es solo un factor muy importante, sino que en muchos casos puede ser el más determinante de todos. Imagina por ejemplo grabar un vídeo en 4K con una bitrate de vídeo de 1000kpbs (que es bastante inadecuado para esa resolución). Esto sería similar a cambiarle la carrocería a un coche del desguace por la de un Ferrari y esperar que el coche corra como un Ferrari (spoiler: no pasa), al fin y al cabo, el motor sigue siendo el mismo que antes, y tal vez el coche ni arranque.</p>
@@ -559,6 +573,45 @@
 <blockquote>
 <p>¡Ojo! Como ya hemos visto, el bitrate no es más que el flujo de datos transmitidos en tu grabación, por lo que si se trata de una transmisión por algún servicio de streaming como Twitch, aumentar el bitrate debe ir en función de tu velocidad de conexión (de subida).</p>
 </blockquote>
+<p>Seguro que alguna vez viste 60fps en el selector de calidad de YouTube, lo pulsaste y todo te pareció mucho más fluido. Esto significa que se transmiten 60 imágenes por segundo, en lugar del valor por defecto, que suele ser 30 fps en la mayoría de casos. En el cine, las películas suelen estar grabadas a 24fps, ya que ayuda a mejorar la calidad general de la grabación, al entrar más luz en el obturador de la cámara. Hay que tener en cuenta el contenido que grabaremos para elegir un framerate o tasa de cuadros por segundo adecuada. No es lo mismo estar grabando un videojuego competitivo, que por lo general se moverá en torno a los 60fps o más, que grabar una pizarra.</p>
+<h2 id="bitrate-de-audio-y-tasa-de-muestreo">Bitrate de audio y tasa de muestreo<a class="headerlink" href="#bitrate-de-audio-y-tasa-de-muestreo" title="Permanent link">&para;</a></h2>
+<p>Obviamente, no podíamos olvidarnos del audio en los conceptos avanzados. ¡Por favor, configurad bien el audio de vuestro streaming! De nada sirve haber configurado los filtros de audio y tener un buen micrófono si olvidas comprobar el bitrate de audio o la tasa de muestreo.</p>
+<p>El bitrate de audio es esencialmente igual que el bitrate de vídeo, pero con la información de audio de nuestra grabación. El bitrate recomendado para la mayoría de grabaciones es el que indicamos en la siguiente tabla:</p>
+<table>
+<thead>
+<tr>
+<th>Bitrate de audio (kbps)</th>
+<th>Calidad resultante</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>320 kbps</td>
+<td>Calidad de un CD</td>
+</tr>
+<tr>
+<td>192 kbps</td>
+<td>No hay pérdidas significativas</td>
+</tr>
+<tr>
+<td>128 kbps</td>
+<td>Pérdidas algo perceptibles</td>
+</tr>
+<tr>
+<td>96 kbps</td>
+<td>Calidad similar a la de la radio FM</td>
+</tr>
+<tr>
+<td>32 kbps</td>
+<td>Calidad similar a la de la radio AM</td>
+</tr>
+<tr>
+<td>16 kbps</td>
+<td>Calidad similar a la radio de ondas cortas (walkie-talkie)</td>
+</tr>
+</tbody>
+</table>
+<p>La tasa de muestreo es la cantidad de veces que se registra un sonido analógico por segundo para ser reconstruido digitalmente. Es el equivalente a la cantidad de frames por segundo (cuadros por segundo) en un vídeo.</p>
 <h2 id="codificacion">Codificación<a class="headerlink" href="#codificacion" title="Permanent link">&para;</a></h2>
 <p>Seguro que alguna vez has escuchado o leído la palabra códec o el término codificación y has sentido terror pensando que hasta aquí había llegado tu entendimiento, que habría que llamar a algún técnico para que te ayudara a configurar todo. La codificación también es un factor clave que puede hacer que tus grabaciones y transmisiones tengan una sensación de fluidez y calidad considerablemente alta una vez configurada. En pocas palabras, y sin entrar en detalles, la codificación se basa en la transformación de un elemento visual en información que será almacenada y transmitida posteriormente, una transformación de algo normalmente analógico a algo digital. En el caso de un streaming, se transformará el lienzo, el aspecto visual de nuestro streaming, compuesto por distintas fuentes de vídeo, en unos y ceros que serán transmitidos y decodificados posteriormente por los reproductores de vídeo. Al final se trata de convertir información de un sistema de datos a otro. Nuestro cerebro, después de todo, almacena la información visual que percibimos por los ojos.</p>
 <p>Entonces, ¿qué es un códec? Un códec es un software, o un dispositivo hardware, que es capaz de codificar o decodificar una señal analógica o un flujo de datos digital. La palabra códec nace de codificador-decodificador. Además de codificar la señal, un códec puede comprimir los datos para reducir el ancho de banda de la transmisión o el espacio de almacenamiento ocupado por un archivo.</p>
