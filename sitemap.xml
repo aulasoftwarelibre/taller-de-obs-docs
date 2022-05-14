@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/advanced-transitions-configuration/</loc>
+         <lastmod>2022-05-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/aulasoftwarelibre/taller-de-obs-docs.git/filters/</loc>
          <lastmod>2022-05-14</lastmod>
          <changefreq>daily</changefreq>
