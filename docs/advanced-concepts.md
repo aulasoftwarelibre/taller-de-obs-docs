@@ -45,3 +45,9 @@ Sin embargo, con el crecimiento de las plataformas de streaming en la última d�
 
 
 > ¡Ojo! Como ya hemos visto, el bitrate no es más que el flujo de datos transmitidos en tu grabación, por lo que si se trata de una transmisión por algún servicio de streaming como Twitch, aumentar el bitrate debe ir en función de tu velocidad de conexión (de subida).
+
+## Codificación
+
+Seguro que alguna vez has escuchado o leído la palabra códec o el término codificación y has sentido terror pensando que hasta aquí había llegado tu entendimiento, que habría que llamar a algún técnico para que te ayudara a configurar todo. La codificación también es un factor clave que puede hacer que tus grabaciones y transmisiones tengan una sensación de fluidez y calidad considerablemente alta una vez configurada. En pocas palabras, y sin entrar en detalles, la codificación se basa en la transformación de un elemento visual en información que será almacenada y transmitida posteriormente, una transformación de algo normalmente analógico a algo digital. En el caso de un streaming, se transformará el lienzo, el aspecto visual de nuestro streaming, compuesto por distintas fuentes de vídeo, en unos y ceros que serán transmitidos y decodificados posteriormente por los reproductores de vídeo. Al final se trata de convertir información de un sistema de datos a otro. Nuestro cerebro, después de todo, almacena la información visual que percibimos por los ojos.
+
+Entonces, ¿qué es un códec? Un códec es un software, o un dispositivo hardware, que es capaz de codificar o decodificar una señal analógica o un flujo de datos digital. La palabra códec nace de codificador-decodificador. Además de codificar la señal, un códec puede comprimir los datos para reducir el ancho de banda de la transmisión o el espacio de almacenamiento ocupado por un archivo.
